@@ -54,7 +54,7 @@ class _TempConverterHomeState extends State<TempConverterHome> {
         convertedTemp = inputTemp * 9 / 5 + 32;
       }
 
-      _convertedTemp = convertedTemp.toStringAsFixed(2);
+      _convertedTemp = convertedTemp.toStringAsFixed(1);
       _history.add(
           '$_conversionType: ${inputTemp.toStringAsFixed(1)} => $_convertedTemp');
     });
